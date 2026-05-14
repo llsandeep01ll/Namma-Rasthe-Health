@@ -17,28 +17,6 @@
 
 ---
 
-## 📋 Table of Contents
-
-- [Project Description](#project-description)
-- [Problem Statement](#problem-statement)
-- [Key Features](#-key-features)
-- [Technologies Used](#-technologies-used)
-- [System Architecture](#-system-architecture)
-- [Project Structure](#-project-structure)
-- [Modules Overview](#-modules-overview)
-- [Installation Steps](#-installation-steps)
-- [How to Run the Project](#-how-to-run-the-project)
-- [Screenshots](#-screenshots)
-- [Database Details](#-database-details)
-- [GPS and Google Maps Integration](#-gps-and-google-maps-integration)
-- [Road Health Score Logic](#-road-health-score-logic)
-- [Future Enhancements](#-future-enhancements)
-- [Project Outcomes](#-project-outcomes)
-- [Contributors](#-contributors)
-- [License](#-license)
-
----
-
 ## 📱 Project Description
 
 **Namma Rasthe Health** is an innovative Android-based application designed to digitize the process of reporting and managing rural road maintenance. It empowers citizens and Gram Panchayat (village council) officers to:
@@ -54,90 +32,9 @@ The application aims to bridge the gap between citizens and local authorities in
 
 ---
 
-## 🎯 Problem Statement
-
-### Current Challenges:
-- **Limited Transparency**: Citizens have no centralized platform to report road issues
-- **Poor Coordination**: Gram Panchayat officers lack real-time visibility of road conditions
-- **Inefficient Tracking**: Manual record-keeping delays road maintenance processes
-- **Data Loss**: No systematic way to store and retrieve historical road data
-- **Geographic Challenges**: Difficulty in locating and prioritizing damaged road sections
-
-### Solution:
-Namma Rasthe Health provides a **digital, location-aware, and user-friendly solution** that democratizes road maintenance reporting and management.
-
 ---
-
-## ✨ Key Features
-
-### 🗺️ **Road Directory**
-- Comprehensive list of all roads in the region
-- Road classification by type (National Highway, State Road, Village Road, etc.)
-- Status filtering and search functionality
-- Quick access to road details and history
-
-### 📍 **GPS-Tagged Damage Reporting**
-- One-tap damage reporting with automatic GPS coordinates
-- Photo attachment support for documentation
-- Damage categorization (Pothole, Crack, Water Logging, etc.)
-- Real-time location tracking with accuracy details
-
-### 🗺️ **Google Maps Integration**
-- Interactive map visualization of all roads
-- Real-time marker display for damage reports
-- Color-coded status indicators on the map
-- Route navigation to specific road sections
-- Offline map caching support
-
-### 📊 **Road Health Status Dashboard**
-- Visual health indicators: 🟢 **Green** (Good), 🟠 **Orange** (Fair), 🔴 **Red** (Poor)
-- Percentage-based health score calculation
-- Historical trend analysis
-- Regional health comparisons
-
-### 📈 **Taluka Dashboard**
-- Overview of all roads in a taluka (administrative division)
-- Aggregate statistics and metrics
-- Reports sorted by priority and urgency
-- Export capabilities for administrative use
-
-### 👷 **Contractor Information**
-- Dedicated contractor management module
-- Work allocation and progress tracking
-- Contact information and availability
-- Performance metrics and work history
-
-### 💾 **Room Database Offline Storage**
-- Local data persistence using Room ORM
-- Automatic sync when connectivity is available
-- Encrypted sensitive information
-- Backup and restore functionality
-
-### 🎨 **Material Design UI**
-- Modern, intuitive user interface
-- Consistent design patterns across app
-- Accessibility features for inclusive usage
-- Dark mode support
-
-### 📑 **RecyclerView-Based Listings**
-- Efficient data display with smooth scrolling
-- Pagination support for large datasets
-- Customizable list filters and sorting
-- Pull-to-refresh functionality
-
----
-
 
 ## 📦 Installation Steps
-
-### Prerequisites
-
-- **Android Studio**: 2022.1.1 or later ([Download](https://developer.android.com/studio))
-- **JDK**: Java 11 or later
-- **Gradle**: 7.0 or later (bundled with Android Studio)
-- **Minimum SDK**: Android 5.0 (API 21)
-- **Target SDK**: Android 13 (API 33) or later
-- **Physical Device/Emulator**: With GPS and internet capabilities
 
 ### Step 1: Clone the Repository
 
@@ -218,92 +115,31 @@ cd Namma-Rasthe-Health
 
 ---
 
-## ▶️ How to Run the Project
-
-### Method 1: Using Android Studio
-
-1. **Select Run Configuration**:
-   - At the top toolbar, select the app configuration dropdown
-   - Choose your emulator or connected device
-
-2. **Click Run Button**:
-   - Click the green ▶️ **Run** button
-   - Or press `Shift + F10`
-
-3. **Wait for Build and Installation**:
-   - Android Studio will compile the project
-   - Install the APK on the selected device
-   - App will launch automatically
-
-### Method 2: Using Command Line
-
-```bash
-# Build debug APK
-./gradlew assembleDebug
-
-# Install on connected device
-./gradlew installDebug
-
-# Run directly (build + install + launch)
-./gradlew runDebug
-```
-
-### Method 3: Build Release APK
-
-```bash
-# Generate release APK
-./gradlew assembleRelease
-
-# Find APK at:
-# app/build/outputs/apk/release/app-release.apk
-```
-
-### First Run Setup
-
-1. **Grant Permissions**:
-   - Location (GPS)
-   - Camera
-   - Storage
-   - Internet
-
-2. **Map Initialization**:
-   - Allow map to load (first time may take a few seconds)
-   - Grant location permissions when prompted
-
-3. **Database Initialization**:
-   - App automatically creates Room database
-   - Initial data loads from remote API (if available)
-
----
-
 ## 📸 Screenshots
 
 ### Main Dashboard
-```
 
 
-```
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/28cfb715-5551-49d9-86ae-797ad64791ef" />
+
+
 
 ### Road Directory
 
+<img width="720" height="1600" alt="WhatsApp Image 2026-05-13 at 11 29 53 PM (3)" src="https://github.com/user-attachments/assets/53fa5735-dd77-4ed9-bc51-589b3fdb1811" />
 
-*Shows comprehensive list of roads with their health status and quick actions*
+
 
 ### Damage Reporting
 
+<img width="720" height="1600" alt="WhatsApp Image 2026-05-13 at 11 29 53 PM (4)" src="https://github.com/user-attachments/assets/1165db47-6e5a-4d46-98b1-e82d94511b31" />
 
-*GPS-tagged damage report form with photo attachment and categorization*
 
 ### Google Maps
 
-
-*Interactive map showing road network with colored health status markers*
-
-
-### Contractor Information
+<img width="720" height="1600" alt="WhatsApp Image 2026-05-14 at 8 40 19 AM" src="https://github.com/user-attachments/assets/8767deea-018c-4704-8a83-d30d23497b40" />
 
 
-*Contractor details, work allocation, and performance tracking*
 
 ---
 
@@ -334,7 +170,5 @@ This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE
 
 ---
 
-
----
 
 
